@@ -1,0 +1,20 @@
+<h2>Listado de Productos en tiempo real</h2>
+<div class="container-main">
+  <div class="container-products">
+    <ul id="items" class="products-items">
+      {{#each products}}
+        <div class="products-items_box">
+          <li>Nombre del producto: <i>{{this.title}}</i></li>
+          <li>Precio: $<i>{{this.price}}</i></li>
+          <li>Descripción: <i>{{this.description}}</i></li>
+          <li>Categoría: <i>{{this.category}}</i></li>
+          <li>Code: <i>{{this.code}}</i></li>
+        </div>
+      {{/each}}
+    </ul>
+  </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/assets/realTimeProducts.js"></script>

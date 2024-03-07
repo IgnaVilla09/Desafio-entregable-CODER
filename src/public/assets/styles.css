@@ -1,0 +1,39 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fef4e1;
+}
+
+h2 {
+  font-size: 70px;
+  margin: 20px 40px;
+}
+
+.products-items {
+  margin: 40px 0;
+}
+
+.products-items_box {
+  margin: 40px 0;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+i {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background: #f00;
+}

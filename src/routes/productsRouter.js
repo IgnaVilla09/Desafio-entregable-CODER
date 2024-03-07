@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { join } from "path";
+import path from "path";
 import ProductManager from "../managers/productManager.js";
 import { __dirname as rutaBase } from "../utils.js";
 
@@ -10,8 +11,6 @@ const productManager = new ProductManager(rutaProducts);
 
 //Muestra de todos los productos
 router.get("/", (req, res) => {
-  let products = productManager.getProducts();
-
   let { limit, skip } = req.query;
 
   if (skip && skip > 0) {
@@ -22,8 +21,9 @@ router.get("/", (req, res) => {
     products = products.slice(0, limit);
   }
 
-  res.setHeader("Content-Type", "application/json");
-  res.status(200).json({ products });
+  const productsFilePath = path.join(rutaBase, "/data/products.json");
+  const products = productManager.getProducts(productsFilePath);
+  res.render("realTimeProducts", { products });
 });
 
 //Muestra de productos según ID
@@ -84,8 +84,9 @@ router.post("/", (req, res) => {
 
   const productoCreado = productManager.createProduct(nuevoProducto);
 
-  res.setHeader("Content-Type", "application/json");
-  res.status(201).json({ productoCreado });
+  req.io.emit("nuevoProducto", nuevoProducto);
+
+  res.render("realTimeProducts", nuevoProducto);
 });
 
 //Actualización de productos según ID elegido
@@ -130,6 +131,8 @@ router.delete("/:pid", (req, res) => {
   }
 
   productManager.deleteProduct(productId);
+
+  req.io.emit("productoEliminado", productId);
 
   res.status(200).json({ message: "Producto eliminado correctamente" });
 });

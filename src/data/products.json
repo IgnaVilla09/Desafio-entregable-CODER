@@ -1,12 +1,12 @@
 [
      {
-          "id": 1,
-          "title": "Harina",
-          "description": "Harina 000",
-          "code": 6015,
-          "price": 19.99,
-          "stock": 10,
-          "category": "Almacen",
+          "id": 28,
+          "title": "Manzana",
+          "description": "Manzana roja fresca",
+          "code": 3549783,
+          "price": 12,
+          "stock": 200,
+          "category": "Frutas",
           "thumbnails": [
                "https://example.com/image1.jpg",
                "https://example.com/image2.jpg"
@@ -14,30 +14,100 @@
           "status": true
      },
      {
-          "id": 3,
-          "title": "Harina para Pizza Napolitana",
-          "description": "Harina 00",
-          "code": 64015,
-          "price": 191.99,
-          "stock": 10,
-          "category": "Almacen",
+          "id": 29,
+          "title": "Peras",
+          "description": "Peras jugosas de temporada",
+          "code": 927654,
+          "price": 15,
+          "stock": 150,
+          "category": "Frutas",
           "thumbnails": [
-               "https://example.com/image112.jpg",
-               "https://example.com/image212.jpg"
+               "https://example.com/image3.jpg",
+               "https://example.com/image4.jpg"
           ],
           "status": true
      },
      {
-          "id": 4,
-          "title": "Harina para Pizza Napolitana",
-          "description": "Harina 00",
-          "code": 984,
-          "price": 191.99,
-          "stock": 10,
-          "category": "Almacen",
+          "id": 30,
+          "title": "Sandía",
+          "description": "Sandía jugosa y refrescante",
+          "code": 123456,
+          "price": 25,
+          "stock": 120,
+          "category": "Frutas",
           "thumbnails": [
-               "https://example.com/image112.jpg",
-               "https://example.com/image212.jpg"
+               "https://example.com/image7.jpg",
+               "https://example.com/image8.jpg"
+          ],
+          "status": true
+     },
+     {
+          "id": 31,
+          "title": "Pimientos",
+          "description": "Pimientos frescos y coloridos",
+          "code": 654321,
+          "price": 8,
+          "stock": 200,
+          "category": "Verduras",
+          "thumbnails": [
+               "https://example.com/image11.jpg",
+               "https://example.com/image12.jpg"
+          ],
+          "status": true
+     },
+     {
+          "id": 32,
+          "title": "Aguacates",
+          "description": "Aguacates frescos y cremosos",
+          "code": 789123,
+          "price": 16,
+          "stock": 120,
+          "category": "Frutas",
+          "thumbnails": [
+               "https://example.com/image27.jpg",
+               "https://example.com/image28.jpg"
+          ],
+          "status": true
+     },
+     {
+          "id": 33,
+          "title": "Aguacates2",
+          "description": "Aguacates frescos y cremosos",
+          "code": 7891123,
+          "price": 16,
+          "stock": 120,
+          "category": "Frutas",
+          "thumbnails": [
+               "https://example.com/image27.jpg",
+               "https://example.com/image28.jpg"
+          ],
+          "status": true
+     },
+     {
+          "id": 34,
+          "title": "Aguacates23",
+          "description": "Aguacates frescos y cremosos",
+          "code": 789144123,
+          "price": 16,
+          "stock": 120,
+          "category": "Frutas",
+          "thumbnails": [
+               "https://example.com/image27.jpg",
+               "https://example.com/image28.jpg"
+          ],
+          "status": true
+     },
+     {
+          "id": 35,
+          "title": "Lechuga",
+          "description": "Lechuga fresca y crujiente",
+          "code": 753159,
+          "price": 3,
+          "stock": 180,
+          "category": "Verduras",
+          "thumbnails": [
+               "https://example.com/image19.jpg",
+               "https://example.com/image20.jpg"
           ],
           "status": true
      }
